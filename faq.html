@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrainSpace — FAQ</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Space Grotesk', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace']
+      },
+      colors: {
+        ink: { DEFAULT: '#0B1120', 2: '#131C31' },
+        paper: '#F5F6F8',
+        line: '#E4E7EC',
+        brand: { 50: '#EEF2FF', 500: '#2F5FFF', 600: '#274FDB', 700: '#1E3FB8' },
+        signal: { green: '#17C964', amber: '#F5A623', rose: '#F43F5E' }
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-paper text-slate-800 antialiased font-sans flex flex-col min-h-screen">
+
+<header class="flex items-center justify-between px-6 lg:px-12 py-5 border-b border-line sticky top-0 bg-white/85 backdrop-blur-md z-50">
+  <a href="index.html" class="flex items-center gap-3">
+    <div class="w-9 h-9 bg-ink rounded-xl flex items-center justify-center text-white font-display font-bold text-lg">R</div>
+    <span class="text-xl font-display font-bold tracking-tight text-slate-900">TrainSpace</span>
+  </a>
+  <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-500">
+    <a href="index.html" class="hover:text-slate-900 transition-colors">Home</a>
+    <a href="about.html" class="hover:text-slate-900 transition-colors">About</a>
+    <a href="faq.html" class="text-brand-600">FAQ</a>
+    <a href="dashboard.html" class="bg-ink hover:bg-ink-2 text-white px-5 py-2.5 rounded-lg transition-colors">Open Dashboard</a>
+  </nav>
+</header>
+
+<main class="flex-grow py-24">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="font-mono text-xs uppercase tracking-widest text-slate-400 mb-4">questions</p>
+      <h1 class="text-4xl md:text-5xl font-display font-bold text-slate-900">Frequently asked</h1>
+    </div>
+
+    <div class="divide-y divide-line border border-line rounded-3xl bg-white overflow-hidden">
+      <div class="p-8 md:p-10">
+        <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-3">
+          <span class="font-mono text-xs text-brand-500">q1</span>
+          Who is this for?
+        </h3>
+        <p class="text-slate-500 leading-relaxed">Educators, makers, students, and builders of every kind — anyone with an idea worth exploring. No prior machine learning experience is required.</p>
+      </div>
+      <div class="p-8 md:p-10">
+        <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-3">
+          <span class="font-mono text-xs text-brand-500">q2</span>
+          How does it actually work?
+        </h3>
+        <p class="text-slate-500 leading-relaxed">You feed the system examples — images, audio, or poses — for each category. Transfer learning adapts a pre-trained network to your data, right there in your browser tab.</p>
+      </div>
+      <div class="p-8 md:p-10">
+        <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-3">
+          <span class="font-mono text-xs text-brand-500">q3</span>
+          Do I need to know how to code?
+        </h3>
+        <p class="text-slate-500 leading-relaxed">Not at all. The dashboard handles training end to end. If you do write code, export the trained model into your own web, app, or hardware project.</p>
+      </div>
+      <div class="p-8 md:p-10">
+        <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-3">
+          <span class="font-mono text-xs text-brand-500">q4</span>
+          What happens to my data?
+        </h3>
+        <p class="text-slate-500 leading-relaxed">It stays on your device. Training runs locally — your webcam feed, microphone audio, and images are never uploaded to a server.</p>
+      </div>
+      <div class="p-8 md:p-10">
+        <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-3">
+          <span class="font-mono text-xs text-brand-500">q5</span>
+          How does the IoT connection work?
+        </h3>
+        <p class="text-slate-500 leading-relaxed">When a prediction crosses a confidence threshold, the dashboard sends the detected class to your endpoint, so a physical device can react in near real time.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white border-t border-line py-8">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-medium text-slate-500">
+    <div class="flex items-center gap-2 font-mono text-xs">
+      <span>TrainSpace</span>
+      <span class="text-slate-300">/</span>
+      <span>machine learning for everyone</span>
+    </div>
+    <div class="bg-paper border border-line px-4 py-2 rounded-full text-slate-600 font-semibold text-xs font-mono">
+      Reza Pahlefi · 2421400073
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
